@@ -179,9 +179,9 @@ def estudiMillorVariables():
             while(k<=0):
                 k += random.randint(0, (Fals_negatiu+Fals_positiu/5)*10)/10
             
-            while(PHI<1):
+            while(PHI<=0):
                 PHI += random.randint(0, (Fals_negatiu+Fals_positiu/5)*10)/10
-              
+
             evaluar()
             if (Fals_negatiu+Fals_positiu/5)<(aux_false_Negatiu+aux_false_Positiu/5) :
                 aux_k=k
