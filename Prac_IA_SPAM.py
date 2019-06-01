@@ -179,7 +179,7 @@ def estudiMillorVariables():
             while(k<=0):
                 k += random.randint(0, (Fals_negatiu+Fals_positiu/5)*10)/10
             
-            while(PHI<1):
+            while(PHI<=0):
                 PHI += random.randint(0, (Fals_negatiu+Fals_positiu/5)*10)/10
               
             evaluar()
@@ -216,8 +216,8 @@ print("millor PHI: " + (str)(PHI))
 print("Accuracy: (%): "+ (str)(((Correcte_positiu+Correcte_negatiu)/totalEvaluats)*100))
 """ print(Correcte_negatiu)
 print(Correcte_positiu) """
-print("False positive rate (%): "+(str)((Fals_positiu/totalEvaluats)*100))
-print("False negative rate (%): "+(str)((Fals_negatiu/totalEvaluats)*100))
+print("False positive rate (%): "+(str)((Fals_positiu/totalEvaluatsH)*100))
+print("False negative rate (%): "+(str)((Fals_negatiu/totalEvaluatsS)*100))
 
 
 werr = (lambd * Fals_positiu + Fals_negatiu) / (lambd * totalEvaluatsH + totalEvaluatsS)
